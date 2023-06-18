@@ -4,12 +4,24 @@
 }
 
 body {
+    
     background: rgb(68,55,244);
     background: linear-gradient(90deg, rgba(68,55,244,1) 22%, rgba(18,9,121,0.8773634453781513) 74%);
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 min-height: 100vh;
+overflow: hidden;
+}
+
+h1 {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    color: aliceblue;
+    letter-spacing: 1px;
+    transform: translate(-50%, -50%);
 }
 
 .clock {
@@ -29,6 +41,7 @@ min-height: 100vh;
     height: 100%;
     text-align: center;
     transform: rotate(var(--rotation));
+    font-size: 1.5em;
 }
 
 .clock .number1 { --rotation: 30deg; }
